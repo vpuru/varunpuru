@@ -1,0 +1,4 @@
+1. Add skills to the bottom of about
+2. Update education text
+3. Resume Download
+4. DDN Analytics Demo Video
