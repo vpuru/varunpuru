@@ -38,3 +38,62 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+const skills = [
+  "C++",
+  "Python",
+  "Java",
+  "JavaScript",
+  "PostgreSQL",
+  "Spring Boot",
+  "Spring Batch",
+  "Express.js",
+  "Flask",
+  "Apache Flink",
+  "React",
+  "Bash",
+  "AWS",
+  "Cucumber",
+  "Docker",
+  "Git",
+  "Jenkins",
+  "JUnit",
+  "Kafka",
+  "Kubernetes",
+  "Terraform",
+  "Unix",
+];
+
+const courses = [
+  "EECS 481. Software Engineering",
+  "EECS 482. Operating Systems",
+  "EECS 484. Database Management Systems",
+  "EECS 485. Web Systems",
+  "EECS 493. User Interface Development",
+  "EECS 497. Human-Centered Software and Design and Development",
+];
+
+// Loop through the desired number of times and append the box each time
+jQuery(function () {
+  for (let i = 0; i < skills.length; i++) {
+    const box = $("<div>", {
+      class:
+        "inline-block p-2 shadow-md rounded border border-stone-200 hover:-translate-y-1 transition",
+      text: skills[i],
+    });
+
+    // Append the box to the container element
+    $("#about-skills").append(box);
+  }
+
+  for (let i = 0; i < courses.length; i++) {
+    const box = $("<div>", {
+      class:
+        "inline-block p-2 shadow-md rounded border border-stone-200 hover:-translate-y-1 transition",
+      text: courses[i],
+    });
+
+    // Append the box to the container element
+    $("#education-courses").append(box);
+  }
+});
