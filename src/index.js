@@ -97,7 +97,7 @@ jQuery(function () {
     $("#education-courses").append(box);
   }
 
-  $('li a[href^="#"]').on("click", function (e) {
+  $('a[href^="#"]').on("click", function (e) {
     // Prevent default link behavior
     e.preventDefault();
 
