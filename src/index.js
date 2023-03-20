@@ -96,4 +96,20 @@ jQuery(function () {
     // Append the box to the container element
     $("#education-courses").append(box);
   }
+
+  $('li a[href^="#"]').on("click", function (e) {
+    // Prevent default link behavior
+    e.preventDefault();
+
+    // Get the section ID from the href attribute
+    const sectionID = $(this).attr("href");
+
+    // Use animate to smoothly scroll to the section
+    $("html, body").animate(
+      {
+        scrollTop: $(sectionID).offset().top,
+      },
+      "slow"
+    );
+  });
 });
