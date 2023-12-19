@@ -69,6 +69,7 @@ const courses = [
   "EECS 482. Operating Systems",
   "EECS 484. Database Management Systems",
   "EECS 485. Web Systems",
+  "EECS 491. Artificial Intelligence",
   "EECS 493. User Interface Development",
   "EECS 497. Human-Centered Software and Design and Development",
 ];
